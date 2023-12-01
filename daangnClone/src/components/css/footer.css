@@ -1,0 +1,72 @@
+/* 푸터 컨테이너 설정 */
+footer {
+    display: flex;
+    flex-direction: column; /* 내용을 세로로 쌓음 */
+    align-items: center; /* 가운데 정렬 */
+    justify-content: center; /* 내용 중앙 정렬 */
+    padding: 20px; /* 패딩 추가 */
+}
+
+/* 로고 및 다운로드 버튼 영역 */
+._1trxeqs0 {
+    text-align: center; /* 텍스트 중앙 정렬 */
+    margin-bottom: 20px; /* 하단 여백 추가 */
+}
+
+/* 다운로드 버튼 스타일링 */
+._1trxeqs4 {
+    display: inline-block;
+    margin: 0 5px; /* 좌우 여백 추가 */
+    padding: 8px 16px; /* 패딩 추가 */
+    border: 1px solid #ddd; /* 테두리 추가 */
+    border-radius: 4px; /* 둥근 모서리 추가 */
+    text-decoration: none; /* 링크 밑줄 제거 */
+    color: #333; /* 텍스트 색상 설정 */
+    background-color: #f8f8f8; /* 배경색 설정 */
+    font-size: 14px; /* 글꼴 크기 설정 */
+    transition: all 0.3s ease; /* 부드러운 전환 효과 추가 */
+}
+
+/* 다운로드 버튼 호버 효과 */
+._1trxeqs4:hover {
+    border-color: #aaa; /* 호버시 테두리 색상 변경 */
+    background-color: #eee; /* 호버시 배경색 변경 */
+}
+
+/* 링크 영역 스타일링 */
+._1trxeqsa {
+    list-style: none; /* 리스트 스타일 제거 */
+    padding: 0; /* 기본 패딩 제거 */
+    text-align: center; /* 중앙 정렬 */
+}
+
+/* 링크 스타일링 */
+._1trxeqsp {
+    color: #333; /* 링크 색상 설정 */
+    text-decoration: none; /* 링크 밑줄 제거 */
+    margin: 5px 0; /* 상하 여백 추가 */
+    display: block; /* 링크를 블록 요소로 설정 */
+}
+
+/* 하단 저작권 및 연락처 영역 스타일링 */
+._1trxeqsc {
+    border-top: 1px solid #ddd; /* 상단 테두리 추가 */
+    padding-top: 10px; /* 상단 패딩 추가 */
+    font-size: 12px; /* 글꼴 크기 설정 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    margin-top: 20px; /* 상단 여백 추가 */
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; /* 모바일에서 세로 방향으로 쌓음 */
+    }
+
+    /* 다운로드 버튼을 모바일 화면에서 전체 너비로 설정 */
+    ._1trxeqs4 {
+        display: block; /* 블록 요소로 변경 */
+        width: 100%; /* 전체 너비 사용 */
+        margin: 10px 0; /* 상하 여백 추가 */
+    }
+}
