@@ -1,13 +1,10 @@
 /***** div id="gnb-root" *****/
-/* 네비게이션 바의 주요 컨테이너 */
+/* 네비게이션 바 부모 컨테이너 */
 ._1knjz490 {
-    height: 40px;
-    display: flex; /* flexbox 레이아웃 적용 */
-    justify-content: center;
-    align-items: center;
+    height: 45px;
     padding: 10px 20px; /* 패딩 적용 */
 
-    position: fixed;/*상단 고정*/
+    position: fixed; /*상단 고정*/
     top: 0;
     left: 0;
     right: 0;
@@ -17,10 +14,21 @@
     font-family: 'Arial', sans-serif; /* 기본 글꼴 설정 */
 }
 
+/*네비에기연 바 자식 컨테이너*/
+._1knjz491 {
+    display: flex; /* flexbox 레이아웃 적용 */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
 /* 로고 영역 */
 ._1knjz492 {
-    margin-right: 20px; /* 로고와 메뉴 사이의 여백 */
+    margin-right: -5px; /* 로고와 메뉴 사이의 여백 */
     float: left;
+
+    height: 90%;
 }
 
 /* 메뉴 리스트 */
@@ -28,7 +36,7 @@
     display: flex; /* 메뉴 아이템들을 가로로 나열 */
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin-right: 100px;
     padding: 0;
 
     list-style: none; /* 기본 리스트 스타일 제거 */
@@ -40,7 +48,7 @@
 
 /* 메뉴 아이템 */
 ._1knjz49n {
-    margin-right: 20px; /* 메뉴 아이템들 사이의 간격 */
+    margin-right: 30px; /* 메뉴 아이템들 사이의 간격 */
     float: left;
     list-style-type: none;
 }
@@ -62,28 +70,38 @@
 /* 검색 폼 */
 ._1knjz498 {
     margin-right: 10px; /* 검색 폼과 버튼 사이의 간격 */
-
 }
 
 /* 검색 입력 필드 */
 ._1knjz49a {
-    border: 1px solid #e1e1e1; /* 테두리 선 */
+    border: none; /* 테두리 선 */
+    border-radius: 8px;
     padding: 5px 10px; /* 내부 패딩 */
-}
 
-/* 버튼 스타일 */
-._1knjz495, ._1knjz496 {
-    background-color: #f8f8f8; /* 버튼 배경 색상 */
-    border: none; /* 테두리 없음 */
-    padding: 5px 10px; /* 패딩 적용 */
-    margin-left: 10px; /* 버튼 사이 간격 */
+    width: 290px;
+    height: 40px;
+
+    font-size: medium;
+
+    color: #d0d1d7;
+    background: #f2f3f6;
+
+    margin-top: 5px; /*윗쪽 마진*/
 }
 
 /* '채팅하기' 버튼 */
 ._1knjz49i {
-    background-color: #ff6f0f; /* 배경 색상 */
-    color: #ffffff; /* 글자 색상 */
+    /*박스 크기*/
+    height: 40px;
+    width: 100px;
+
+    /*폰트 스타일*/
+    font-size: medium;
+    font-weight: bold;
+
+    background-color: #ffffff; /* 배경 색상 */
+    color: #000000; /* 글자 색상 */
     padding: 5px 15px; /* 내부 패딩 */
-    border-radius: 4px; /* 모서리 둥글게 */
-    margin-left: 10px; /* 왼쪽 마진 */
+    border: 1px #d0d1d7 solid;
+    border-radius: 4px; /* 모서리 둥글게 */margin-top: 5px; /*윗쪽 마진*/
 }

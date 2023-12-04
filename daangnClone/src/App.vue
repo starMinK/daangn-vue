@@ -12,11 +12,10 @@ export default {
 }
 </script>
 
-
 <template>
   <div id="gnb-root">
     <div class="light-theme">
-      <Header/>
+      <Header></Header>
     </div>
   </div>
   <main>
@@ -78,7 +77,7 @@ export default {
   </main>
   <div id="footer-root">
     <div class="light-theme">
-      <Footer/>
+      <Footer></Footer>
     </div>
   </div>
 </template>

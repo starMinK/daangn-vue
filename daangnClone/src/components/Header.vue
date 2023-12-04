@@ -14,9 +14,11 @@
                 <path
                     d="M11.3103 0C9.15573 0 7.6554 1.50565 7.41923 3.28415C4.54738 2.4909 2.29688 4.67359 2.29688 7.07354C2.29688 8.9114 3.55978 10.3956 5.24324 10.8781C6.60087 11.2659 9.04586 10.9766 9.04586 10.9766C9.03323 10.383 9.58007 9.73118 10.4237 9.13751C12.8232 7.44996 14.6999 6.65419 14.9891 4.35276C15.2922 1.94523 13.5052 0 11.3103 0Z"
                     fill="#00A05B"></path>
-                <path d="M36.7873 14.8305C34.8374 15.4431 31.4616 15.769 28.2905 15.769V11.9114H34.8399V9.03906H24.7783V18.8208C30.2808 18.8208 35.0849 18.1576 37.1132 17.5298L36.7873 14.8305Z"
+                <path
+                    d="M36.7873 14.8305C34.8374 15.4431 31.4616 15.769 28.2905 15.769V11.9114H34.8399V9.03906H24.7783V18.8208C30.2808 18.8208 35.0849 18.1576 37.1132 17.5298L36.7873 14.8305Z"
+                    fill="#FF6F0F"></path>
+                <path d="M41.4104 7.89453H37.9033V19.1402H41.4104V15.6148H44.2393V12.5467H41.4104V7.89453Z"
                       fill="#FF6F0F"></path>
-                <path d="M41.4104 7.89453H37.9033V19.1402H41.4104V15.6148H44.2393V12.5467H41.4104V7.89453Z" fill="#FF6F0F"></path>
                 <path
                     d="M34.8969 19.1138C31.1814 19.1138 28.4561 21.1613 28.4561 24.1663C28.4561 27.1713 31.1839 29.2188 34.8969 29.2188C38.6098 29.2188 41.3377 27.17 41.3377 24.1663C41.3377 21.1626 38.6124 19.1138 34.8969 19.1138ZM34.8969 26.4058C33.2223 26.4058 31.9657 25.6025 31.9657 24.1613C31.9657 22.72 33.2223 21.9179 34.8969 21.9179C36.5715 21.9179 37.8281 22.7213 37.8281 24.1613C37.8281 25.6012 36.5728 26.4058 34.8969 26.4058Z"
                     fill="#FF6F0F"></path>
@@ -35,8 +37,10 @@
     </a>
       <nav class="_1knjz49j _1s38h9c0">
         <ul class="_1knjz49l _1s38h9c5">
-          <li class="_1knjz49n"><a class="_1knjz49o _1s38h9c4 _1s38h9c2 undefined" href="https://www.daangn.com/fleamarket/">중고거래</a></li>
-          <li class="_1knjz49n"><a class="_1knjz49o _1s38h9c4 _1s38h9c2 undefined" href="/kr/nearby-stores/">동네업체</a></li>
+          <li class="_1knjz49n"><a class="_1knjz49o _1s38h9c4 _1s38h9c2 undefined"
+                                   href="https://www.daangn.com/fleamarket/">중고거래</a></li>
+          <li class="_1knjz49n"><a class="_1knjz49o _1s38h9c4 _1s38h9c2 undefined" href="/kr/nearby-stores/">동네업체</a>
+          </li>
           <li class="_1knjz49n"><a class="_1knjz49o _1s38h9c4 _1s38h9c2 undefined" href="/kr/jobs/">알바</a></li>
           <li class="_1knjz49n"><a class="_1knjz49o _1s38h9c4 _1s38h9c2 undefined" href="/kr/realty/">부동산 직거래</a></li>
           <li class="_1knjz49n"><a class="_1knjz49o _1s38h9c4 _1s38h9c2 undefined" href="/kr/car/">중고차 직거래</a></li>
@@ -44,31 +48,12 @@
       </nav>
       <div class="_1s38h9c1 _1s38h9c0">
             <span>
-<!--              검색 버튼-->
-              <!--            <button class="_1knjz496 _1s38h9c3 _1s38h9c0 _1s38h9c2">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M3.5999 10.5C3.5999 6.68926 6.68914 3.60002 10.4999 3.60002C14.3107 3.60002 17.3999 6.68926 17.3999 10.5C17.3999 14.3108 14.3107 17.4 10.4999 17.4C6.68914 17.4 3.5999 14.3108 3.5999 10.5ZM10.4999 2.40002C6.0264 2.40002 2.3999 6.02652 2.3999 10.5C2.3999 14.9735 6.0264 18.6 10.4999 18.6C12.5207 18.6 14.3687 17.86 15.7876 16.6362L20.5756 21.4243C20.81 21.6586 21.1899 21.6586 21.4242 21.4243C21.6585 21.19 21.6585 20.8101 21.4242 20.5758L16.6361 15.7877C17.8599 14.3688 18.5999 12.5208 18.5999 10.5C18.5999 6.02652 14.9734 2.40002 10.4999 2.40002Z"
-                                fill="#212124">
-
-                          </path>
-                        </svg>
-                        </button>-->
-            <form novalidate="" class="_1knjz498"><input type="search" class="_1knjz49a" placeholder="물품이나 동네를 검색해보세요" value=""></form>
+            <form novalidate="" class="_1knjz498"><input type="search" class="_1knjz49a" placeholder="물품이나 동네를 검색해보세요"
+                                                         value=""></form>
           </span>
         <span>
-<!--햄버거 버튼-->
-          <!--              <button class="_1knjz495 _1s38h9c3 _1s38h9c0 _1s38h9c2"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M3 5.00002C3 4.66865 3.26863 4.40002 3.6 4.40002H20.4C20.7314 4.40002 21 4.66865 21 5.00002C21 5.3314 20.7314 5.60002 20.4 5.60002H3.6C3.26863 5.60002 3 5.3314 3 5.00002Z"
-                                fill="#212124"></path>
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M3 12C3 11.6687 3.26863 11.4 3.6 11.4H20.4C20.7314 11.4 21 11.6687 21 12C21 12.3314 20.7314 12.6 20.4 12.6H3.6C3.26863 12.6 3 12.3314 3 12Z" fill="#212124"></path>
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M3 19C3 18.6687 3.26863 18.4 3.6 18.4H20.4C20.7314 18.4 21 18.6687 21 19C21 19.3314 20.7314 19.6 20.4 19.6H3.6C3.26863 19.6 3 19.3314 3 19Z" fill="#212124"></path>
-                        </svg>
-                        </button>-->
-              <button type="button" class="karrot-button r14vym0 _1s38h9c3 _1s38h9c4 r14vym4 r14vym7 _1knjz49i">채팅하기</button>
+              <button type="button"
+                      class="karrot-button r14vym0 _1s38h9c3 _1s38h9c4 r14vym4 r14vym7 _1knjz49i">채팅하기</button>
             </span>
       </div>
     </div>
