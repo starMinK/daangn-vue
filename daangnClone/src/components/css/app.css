@@ -22,28 +22,32 @@ main {
 
 #home-main-top {
     display: flex; /* flexbox 레이아웃 적용 */
-    max-width: 1100px; /* 최대 너비 설정 */
-    margin: auto; /* 가로 중앙 정렬 */
+    max-width: 1500px; /* 최대 너비 설정 */
+    height: 760px;
+    margin: auto 0 auto 130px; /* 가로 중앙 정렬 */
 }
 
 /* 이미지와 설명을 감싸는 컨테이너 */
 .home-main-image-top {
     flex: 1; /* 유연한 크기 조정 */
-    max-width: 500px; /* 최대 너비 설정 */
+    max-width: 640px; /* 최대 너비 설정 */
 }
 
 .home-main-desc {
     flex: 1; /* 유연한 크기 조정 */
     padding: 20px; /* 패딩 설정 */
     max-width: 50%; /* 최대 너비 설정 */
+    margin: 10% 0;
+    height: 40%;
 }
 
-/* 제목과 설명 텍스트 스타일 */
+/* 제목 텍스트 스타일 */
 .home-main-title {
     color: #222; /* 제목 색상 */
-    font-size: 2.5em; /* 제목 크기 */
+    font-size: 3.3em; /* 제목 크기 */;
 }
 
+/*설명 텍스트 스타일*/
 .service-desc {
     color: #555; /* 설명 색상 */
     font-size: 1.2em; /* 설명 크기 */
@@ -56,8 +60,8 @@ main {
     align-items: center;
 }
 .fixed-download-button {
-    width: 120px;
-    height: 30px;
+    width: 140px;
+    height: 35px;
     display: flex;
     margin: 0 10px;
     text-decoration: none;
@@ -68,14 +72,14 @@ main {
     border-radius: 10px; /* 모서리 둥글게 */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* 그림자 효과 */
     font-weight: bolder;
-    font-size: small;
+    font-size: medium;
     align-items: center;    /*세로 중앙 정렬*/
 }
 
 
 .fixed-download-button img {
     height: 24px; /* 이미지 높이 */
-    margin-right: 10px; /* 이미지와 텍스트 사이 마진 */
+    margin: 0 10px 0 10px;
     float: left;
 }
 
@@ -83,7 +87,6 @@ main {
     vertical-align: middle; /* 텍스트 수직 정렬 */
 }
 
-/**/
 .home-main-content {
     display: flex;
     align-items: center; /* 세로 중앙 정렬 */
@@ -100,12 +103,12 @@ main {
 
 /* 이미지 자체의 크기를 조정하려면, 다음과 같이 .home-main-image-01 클래스에 스타일을 추가합니다. */
 .home-main-image-01 {
-    width: 800px; /* 컨테이너 크기에 맞춰 이미지 크기를 조정 */
+    width: 620px; /* 컨테이너 크기에 맞춰 이미지 크기를 조정 */
     height: auto; /* 이미지의 비율을 유지 */
     object-fit: contain; /* 이미지가 컨테이너 안에 꽉 차게 하면서 비율 유지 */
 }
 
-.service-title, .home-main-title, .service-desc {
+.service-title, .service-desc {
     margin: 0;
     padding: 0;
 }
@@ -117,18 +120,42 @@ main {
 }
 
 .home-button {
-    background-color: #ffffff;
+    /*color*/
+    background-color: #e7eaed;
     color: #000000;
+
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
-    border: 1px solid #cccccc;
     text-align: center;
     transition: background-color 0.3s ease;
+
+    font-size: larger;
+    font-weight: bolder;
+
+    height: 30px;
+}
+
+.home-button[href="/hot_articles"] {
+    width: 125px;
+    margin-bottom: -10px;
+}
+
+.home-button[href="/trust"] {
+    width: 190px;
+    margin-bottom: -10px;
 }
 
 .home-button:hover {
-    background-color: #e0e0e0;
+    background-color: #b9b9b9;
+    border-radius: 10px;
+}
+
+.service-title {
+    color: #fd6e0f;
+    font-size: larger;
+    font-weight: bolder;
+    margin-bottom: -30px;
 }
 
 @media (max-width: 768px) {
