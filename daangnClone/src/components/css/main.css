@@ -136,7 +136,7 @@ main {
     height: 30px;
 }
 
-.home-button[href="/hot_articles"] {
+.home-button[href="/hot-articles"] {
     width: 125px;
     margin-bottom: -10px;
 }
