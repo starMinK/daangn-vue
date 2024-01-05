@@ -1,10 +1,30 @@
-<script setup>
+<script>
+import header from "./js/header.js";
 
+export default {
+  name: "Header",
+  data() {
+    return {
+      isActive: 0
+    }
+  },
+  methods: {
+    onDevelopingAlert() {
+      header.onDevelopingAlert();
+    }
+  },
+  created() {
+    this.$watch(() => this.$route.path, (toParams) => {
+      this.isActive = header.menuSelected(toParams);
+    })
+  },
+}
 </script>
 
 <template>
-  <div class="_1knjz490">
-    <div class="_1knjz491 _1s38h9c0"><a class="_1knjz492" href="https://www.daangn.com">
+  <div class="nav_main">
+    <div class="nav_content">
+      <a class="logo" href="/">
           <span>
             <svg width="65" height="36" viewBox="0 0 65 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_47_13130)">
@@ -28,33 +48,53 @@
                     fill="#FF6F0F"></path>
               </g>
               <defs>
-                <clipPath id="clip0_47_13130">
+                <clipPath>
                   <rect width="64.1053" height="36" fill="white"></rect>
                 </clipPath>
               </defs>
             </svg>
           </span>
-    </a>
-      <nav class="_1knjz49j _1s38h9c0">
-        <ul class="_1knjz49l _1s38h9c5">
-          <li class="_1knjz49n"><a class="_1knjz49o _1s38h9c4 _1s38h9c2 undefined"
-                                   href="https://www.daangn.com/fleamarket/">중고거래</a></li>
-          <li class="_1knjz49n"><a class="_1knjz49o _1s38h9c4 _1s38h9c2 undefined" href="/kr/nearby-stores/">동네업체</a>
+      </a>
+      <nav class="nav_menu">
+        <ul>
+          <li class="menu_item">
+            <router-link to="/hot-articles"
+                         :class="{ menu_link_activate: (isActive === 1), menu_link:!(isActive === 1)}">중고거래
+            </router-link>
           </li>
-          <li class="_1knjz49n"><a class="_1knjz49o _1s38h9c4 _1s38h9c2 undefined" href="/kr/jobs/">알바</a></li>
-          <li class="_1knjz49n"><a class="_1knjz49o _1s38h9c4 _1s38h9c2 undefined" href="/kr/realty/">부동산 직거래</a></li>
-          <li class="_1knjz49n"><a class="_1knjz49o _1s38h9c4 _1s38h9c2 undefined" href="/kr/car/">중고차 직거래</a></li>
+          <li class="menu_item">
+            <router-link to="/nearby-stores"
+                         :class="{ menu_link_activate: (isActive === 2), menu_link:!(isActive === 2)}"
+                         @click="onDevelopingAlert()">동네업체
+            </router-link>
+          </li>
+          <li class="menu_item">
+            <router-link to="/jobs" :class="{ menu_link_activate: (isActive === 3), menu_link:!(isActive === 3)}"
+                         @click="onDevelopingAlert()">알바
+            </router-link>
+          </li>
+          <li class="menu_item">
+            <router-link to="/realty" :class="{ menu_link_activate: (isActive === 4), menu_link:!(isActive === 4)}"
+                         @click="onDevelopingAlert()">부동산 직거래
+            </router-link>
+          </li>
+          <li class="menu_item">
+            <router-link to="/car" :class="{ menu_link_activate: (isActive === 5), menu_link:!(isActive === 5)}"
+                         @click="onDevelopingAlert()">중고차 직거래
+            </router-link>
+          </li>
         </ul>
       </nav>
-      <div class="_1s38h9c1 _1s38h9c0">
-            <span>
-            <form novalidate="" class="_1knjz498"><input type="search" class="_1knjz49a" placeholder="물품이나 동네를 검색해보세요"
-                                                         value=""></form>
-          </span>
+      <div class="search_main">
         <span>
-              <button type="button"
-                      class="karrot-button r14vym0 _1s38h9c3 _1s38h9c4 r14vym4 r14vym7 _1knjz49i">채팅하기</button>
-            </span>
+          <form novalidate="" class="search_form">
+            <input type="search" class="search_field" placeholder="물품이나 동네를 검색해보세요" value="">
+          </form>
+        </span>
+
+        <span>
+              <button type="button" class="chat_btn">채팅하기</button>
+          </span>
       </div>
     </div>
   </div>

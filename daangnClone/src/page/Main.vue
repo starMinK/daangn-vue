@@ -1,19 +1,11 @@
 <script>
-import Header from "../components/Header.vue"
-import Footer from "../components/Footer.vue"
 
 export default {
-  name: 'App',
-  components: {
-    Header,
-    Footer,
-
-  }
+  name: 'Main',
 }
 </script>
 
 <template>
-  <Header></Header>
   <main>
     <!--섹션 1-->
     <section id="rebranded-home-main-section-top" class="background-pale-peach">
@@ -70,16 +62,15 @@ export default {
             동네 주민들과 가깝고 따뜻한 거래를<br>지금 경험해보세요.
           </p>
           <div class="home-buttons">
-            <a class="home-button button-text" href="/hot_articles">인기매물 보기</a>
+            <a class="home-button button-text" href="/hot-articles">인기매물 보기</a>
             <a class="home-button button-text" href="/trust">믿을 수 있는 중고거래</a>
           </div>
         </div>
       </div>
     </section>
   </main>
-  <Footer></Footer>
 </template>
 
 <style>
-@import "../components/css/app.css";
+@import "../components/css/main.css";
 </style>

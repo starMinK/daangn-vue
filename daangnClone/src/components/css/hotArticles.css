@@ -1,0 +1,138 @@
+main {
+    padding-top: 50px;
+}
+
+/* 첫 번째 섹션: 믿을만한 이웃 간 중고거래 커버 */
+.fleamarket-cover {
+    width: 100%;
+    height: 330px;
+}
+
+.cover-content {
+    width: 100%;
+    height: 100%;
+    background: rgb(250, 244, 174);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contents {
+    margin: 40px 50px 0 0;
+}
+
+.cover-title {
+    font-size: 2em; /* 큰 제목 글씨 크기 */
+    font-weight: bolder;
+    color: #333; /* 글씨 색상 */
+    margin-bottom: 20px; /* 제목과 설명 사이 여백 */
+}
+
+.cover-description {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* 두 번째 섹션: 중고거래 인기매물 리스트 */
+#fleamarket-article-list {
+    padding: 50px 15px; /* 상하 여백 */
+}
+
+.text-article-list {
+    display: flex;
+    justify-content: center;
+    font-size: 2.0em;
+}
+
+.cards-wrap {
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 757px;
+}
+
+.card-top {
+    width: 30%; /* 카드 너비 */
+    overflow: hidden; /* 내용이 넘칠 경우 숨김 */
+    margin-bottom: 20px; /* 카드 간의 상하 여백 */
+}
+
+.card-photo img {
+    width: 100%; /* 이미지가 카드 너비에 맞게 */
+    height: auto;
+    border-radius: 8px; /* 둥근 모서리 */
+}
+
+.card-title {
+    margin-bottom: 10px; /* 제목과 가격 사이 여백 */
+}
+
+.card-price {
+    font-weight: bold;
+}
+
+.card-region-name {
+    margin-bottom: 5px; /* 지역명과 관심, 채팅 사이 여백 */
+    font-size: 0.8em;
+}
+
+.card-counts {
+    font-size: 0.8em;
+    color: #999;
+}
+
+.text-articles-more {
+    padding: 40px 0 30px 0;
+
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* 세 번째 섹션: 중고거래 인기검색어 */
+.fleamarket-keywords {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 15px; /* 상하 여백 */
+    background: #f8f8f8; /* 배경 색상 */
+}
+
+.keywords-list {
+    display: flex;
+    justify-content: center; /* 중앙 정렬 */
+    flex-wrap: wrap; /* 내용이 넘칠 경우 다음 줄로 */
+    gap: 15px; /* 항목 사이 간격 */
+}
+
+.keyword-title {
+    font-size: 0.9em;
+    text-decoration: underline;
+}
+
+.keyword-item {
+    display: inline-block;
+    margin: 5px;
+}
+
+.keyword-link {
+    text-decoration: none; /* 링크 밑줄 제거 */
+    color: #333; /* 링크 색상 */
+    font-size: 1em;
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 768px) {
+    .card-top {
+        width: 100%; /* 모바일 화면에서 카드 너비 조정 */
+    }
+
+    .keywords-list {
+        flex-direction: column; /* 모바일 화면에서 수직 정렬 */
+        align-items: center;
+    }
+}

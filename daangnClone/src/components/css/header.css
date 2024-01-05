@@ -1,8 +1,7 @@
 /***** div id="gnb-root" *****/
 /* 네비게이션 바 부모 컨테이너 */
-._1knjz490 {
-    height: 45px;
-    padding: 10px 20px; /* 패딩 적용 */
+.nav_main {
+    height: 60px;
 
     position: fixed; /*상단 고정*/
     top: 0;
@@ -14,17 +13,16 @@
     font-family: 'Arial', sans-serif; /* 기본 글꼴 설정 */
 }
 
-/*네비에기연 바 자식 컨테이너*/
-._1knjz491 {
+/*네비게이션 바 자식 컨테이너*/
+.nav_content {
     display: flex; /* flexbox 레이아웃 적용 */
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 90%;
 }
 
 /* 로고 영역 */
-._1knjz492 {
+.logo {
     margin-right: -5px; /* 로고와 메뉴 사이의 여백 */
     float: left;
 
@@ -32,7 +30,7 @@
 }
 
 /* 메뉴 리스트 */
-._1knjz49j {
+.nav_menu {
     display: flex; /* 메뉴 아이템들을 가로로 나열 */
     justify-content: center;
     align-items: center;
@@ -47,50 +45,63 @@
 }
 
 /* 메뉴 아이템 */
-._1knjz49n {
+.menu_item {
     margin-right: 30px; /* 메뉴 아이템들 사이의 간격 */
     float: left;
     list-style-type: none;
 }
 
 /* 메뉴 링크 */
-._1knjz49o {
+.menu_link {
     text-decoration: none; /* 링크 밑줄 제거 */
     color: #333; /* 글자 색상 */
+}
 
+.menu_link_activate {
+    text-decoration: none; /* 링크 밑줄 제거 */
+    color: #fd6e0f;
 }
 
 /* 검색 및 기타 버튼 영역 */
-._1s38h9c1 {
+.search_main {
     display: flex; /* 검색 및 버튼을 가로로 나열 */
     align-items: center;;
     float: left;
 }
 
 /* 검색 폼 */
-._1knjz498 {
+.search_form {
     margin-right: 10px; /* 검색 폼과 버튼 사이의 간격 */
 }
 
 /* 검색 입력 필드 */
-._1knjz49a {
+.search_field {
     border: none; /* 테두리 선 */
     border-radius: 8px;
     padding: 5px 10px; /* 내부 패딩 */
 
-    width: 290px;
+    width: 270px;
     height: 40px;
 
     font-size: medium;
 
-    color: #d0d1d7;
     background: #f2f3f6;
 
-    margin-top: 5px; /*윗쪽 마진*/
+    outline: none;
+}
+
+/* 검색 입력 필트 clear 버튼 (x)*/
+[type="search"]::-webkit-search-cancel-button {
+    -web-appearance: none;
+    appearance: none;
+    height: 14px;
+    width: 14px;
+    background-image: url("https://www.freeiconspng.com/thumbs/close-button-png/silver-close-button-png-15.png");
+    background-size: 14px 14px;
 }
 
 /* '채팅하기' 버튼 */
-._1knjz49i {
+.chat_btn {
     /*박스 크기*/
     height: 40px;
     width: 100px;
@@ -100,8 +111,7 @@
     font-weight: bold;
 
     background-color: #ffffff; /* 배경 색상 */
-    color: #000000; /* 글자 색상 */
     padding: 5px 15px; /* 내부 패딩 */
     border: 1px #d0d1d7 solid;
-    border-radius: 4px; /* 모서리 둥글게 */margin-top: 5px; /*윗쪽 마진*/
+    border-radius: 4px; /* 모서리 둥글게 */
 }

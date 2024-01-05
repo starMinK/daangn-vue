@@ -1,15 +1,31 @@
-.white-label {
+.footer-main {
+    width: 60%;
     height: 300px;
-    display: flex;
-    justify-content: space-between;
 
+    margin: auto;
     font-size: larger;
     font-weight: bolder;
 
     color: #b0b4ba;
+
+    display: flex;
+    align-items: center;
 }
 
-.footer-main-content {
-    width: 80%;
-    margin: auto;
+.white-label {
+    display: flex;
+    width: 100%;
+
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.creator {
+
+    display: flex;
+    flex-direction: column;
 }
