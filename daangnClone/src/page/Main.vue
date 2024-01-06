@@ -6,7 +6,10 @@ export default {
 </script>
 
 <template>
+  
   <main>
+    <router-link to="/login">Login</router-link>
+    <router-link to="/post">거래글작성</router-link>
     <!--섹션 1-->
     <section id="rebranded-home-main-section-top" class="background-pale-peach">
       <div id="home-main-top">
